@@ -1,0 +1,423 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const featuredProjects = [
+  {
+    title: 'Time & Expense Entry for Healthcare Staffing',
+    tagline: 'Redesigning a high‑stakes workflow for complex shift submissions.',
+    summary:
+      'I redesigned the entry system to support complex shifts, mileage, and expenses — streamlining submissions, improving accuracy, and reducing friction across the approval and billing process.',
+    role: 'Product Designer',
+    timeline: 'Healthcare staffing platform',
+    focus: 'Product UX/UI',
+    image: '/assets/time-expense-1.jpg',
+    link: 'https://www.micahfischer.com/redesigning-time-expense-entry-for-healthcare-staffing-workflows'
+  },
+  {
+    title: 'Rate Tools for Managed Service Providers',
+    tagline: 'A flexible system for billing, margins, and overtime logic.',
+    summary:
+      'I redesigned the Kimedics rate entry system for Managed Service Providers, bringing clarity to billing, payouts, and margin tracking while simplifying setup across complex staffing contracts.',
+    role: 'Product Designer',
+    timeline: 'Healthcare MSP workflows',
+    focus: 'Product UX/UI',
+    image: '/assets/rate-tools-1.jpg',
+    link: 'https://www.micahfischer.com/rate-management-tools-for-healthcare',
+    imageUnavailable: true
+  },
+  {
+    title: 'LittleBird Guest Access Management',
+    tagline: 'Turning a confusing screen into a calm, step‑by‑step wizard.',
+    summary:
+      'I simplified the LittleBird app guest access interface into an intuitive step‑by‑step workflow that gives users greater control over their smart home and promotes security in multifamily communities.',
+    role: 'UX Designer',
+    timeline: 'Smart home & access platform',
+    focus: 'UX/UI, Interaction Design',
+    image: '/assets/littlebird-1.jpg',
+    link: 'https://www.micahfischer.com/littlebird'
+  },
+  {
+    title: 'Carrot AR Grocery Wayfinding',
+    tagline: 'An AR concept that helps shoppers move faster and smarter.',
+    summary:
+      'I conceptualized Carrot, a new augmented‑reality grocery shopping app providing shoppers with guided directions through a grocery store, helping them shop their list quickly, saving them time and money.',
+    role: 'UX/UI Designer',
+    timeline: '4‑week product sprint',
+    focus: 'Mobile UX/UI, Product, Interaction Design',
+    image: '/assets/carrot-1.jpg',
+    link: 'https://www.micahfischer.com/carrot'
+  },
+  {
+    title: 'GCU College of Arts & Media Website',
+    tagline: 'A recruitment‑focused digital platform for a growing college.',
+    summary:
+      \"I developed a new website for Grand Canyon University's College of Arts and Media, which served as a tool for student recruitment, boosting program enrollment by approximately 20% across all programs.\",
+    role: 'Web Designer',
+    timeline: 'Higher education marketing',
+    focus: 'Web Design, UX/UI',
+    image: '/assets/gcu-arts-1.jpg',
+    link: 'https://www.micahfischer.com/gcu-arts'
+  }
+];
+
+const lockedProjects = [
+  {
+    title: 'Kimedics Workforce Management',
+    summary:
+      'I transformed the Kimedics workforce management platform from a dated application into a modern and intuitive product used by 600+ healthcare organizations and 13,000+ healthcare providers.',
+    status: 'Password required'
+  },
+  {
+    title: 'LevelUp Video Intercom Technician App',
+    summary:
+      'I designed a new app to help intercom technicians install, set up, and troubleshoot video intercoms, helping make our resell partners self‑sufficient and alleviating pressure on our in‑house support team.',
+    status: 'Password required'
+  }
+];
+
+const experience = [
+  {
+    role: 'Product Designer',
+    company: 'Kimedics (a Jackson Healthcare Company)',
+    dates: "May '23 — Present · Nashville, TN",
+    detail:
+      'Established a design system for Kimedics 2.0 and translated complex information architecture into intuitive data visualization.'
+  },
+  {
+    role: 'Co‑Founder, Design Leadership',
+    company: 'Sunbloom Creative',
+    dates: "May '23 — Present · Birmingham, AL",
+    detail:
+      'Oversee creative strategy, project workflows, and multi‑disciplinary client engagements.'
+  },
+  {
+    role: 'User Experience Designer',
+    company: 'LevelUp (LittleBird & Gatehawk)',
+    dates: "Oct '21 — May '23 · Phoenix, AZ",
+    detail:
+      'Built innovative and research‑backed product solutions for smart home automation and connected devices.'
+  },
+  {
+    role: 'Web Design Manager',
+    company: 'Grand Canyon University',
+    dates: "Apr '21 — Apr '23 · Phoenix, AZ",
+    detail:
+      'Redesigned and built a student government website, improving student engagement by 43%.'
+  },
+  {
+    role: 'Interactive Director',
+    company: 'Canyon Creative',
+    dates: "Apr '22 — Feb '23 · Phoenix, AZ",
+    detail:
+      'Designed and built the GCU College of Arts and Media website, which increased program enrollment by 20%.'
+  },
+  {
+    role: 'Graphic Designer',
+    company: 'Grand Canyon Education',
+    dates: "Sept '20 — Nov '21 · Phoenix, AZ",
+    detail:
+      'Designed award‑winning advertising and marketing materials for university and local business clients.'
+  }
+];
+
+const education = [
+  {
+    program: 'B.A. Digital Design',
+    school: 'Grand Canyon University',
+    dates: "Sep '20 — May '23 · Phoenix, AZ",
+    detail:
+      "Graduated summa cum laude, President's Academic Scholarship Recipient, Student Government Web Designer, College of Arts and Media Dean's Council Member."
+  },
+  {
+    program: 'West‑MEC Coding Program',
+    school: 'West‑MEC',
+    dates: "Aug '18 — Dec '19 · Glendale, AZ",
+    detail:
+      'MTA 98‑375 HTML5 App Development certification, Career & Technical Student Organization President.'
+  }
+];
+
+const hardSkills = [
+  'User Experience Design',
+  'Visual/User Interface Design',
+  'User Testing & Research',
+  'Design Systems',
+  'Responsive Design'
+];
+
+const softSkills = [
+  'Positive, friendly, and easy to work with',
+  'Organized and manages time well',
+  'Collaborates well with engineering',
+  'Adaptable to challenging constraints',
+  'Understands business impact'
+];
+
+const tools = [
+  'Figma, Adobe XD, Balsamiq',
+  'FigJam, Miro, Mural, Milanote',
+  'Adobe Creative Cloud',
+  'HTML/CSS/JS, WordPress, Webflow',
+  'Monday, Asana, Notion, Jira'
+];
+---
+
+<Layout>
+  <div class="hero-grid">
+    <header class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
+      <div class="text-sm uppercase tracking-[0.3em] text-[color:var(--charcoal)]">Micah Fischer</div>
+      <nav class="hidden items-center gap-6 text-sm uppercase tracking-[0.2em] md:flex">
+        <a href="#work" class="transition hover:text-[color:var(--sunset)]">Work</a>
+        <a href="#about" class="transition hover:text-[color:var(--sunset)]">About</a>
+        <a href="#experience" class="transition hover:text-[color:var(--sunset)]">Experience</a>
+        <a href="#contact" class="transition hover:text-[color:var(--sunset)]">Contact</a>
+      </nav>
+      <a
+        class="rounded-full border border-[color:var(--charcoal)] px-4 py-2 text-xs uppercase tracking-[0.2em] transition hover:bg-[color:var(--charcoal)] hover:text-white"
+        href="#contact"
+      >
+        Let’s talk
+      </a>
+    </header>
+
+    <section class="mx-auto grid w-full max-w-6xl gap-10 px-6 pb-20 pt-10 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="space-y-6">
+        <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Product Designer · Nashville, TN</p>
+        <h1 class="text-4xl font-semibold leading-tight text-[color:var(--ink)] md:text-6xl">
+          I transform complex problems into intuitive design solutions for startups and growing brands.
+        </h1>
+        <p class="max-w-xl text-base text-[color:var(--charcoal)] md:text-lg">
+          I’m Micah Fischer, a visionary, multifaceted, award‑winning designer with 5+ years of experience in product,
+          user experience, web design, and brand development. I help teams turn ideas into thoughtful, research‑backed
+          product solutions.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#work"
+            class="rounded-full bg-[color:var(--sunset)] px-6 py-3 text-sm uppercase tracking-[0.2em] text-white shadow-soft-xl transition hover:translate-y-[-2px]"
+          >
+            View work
+          </a>
+          <a
+            href="#contact"
+            class="rounded-full border border-[color:var(--charcoal)] px-6 py-3 text-sm uppercase tracking-[0.2em] transition hover:bg-[color:var(--charcoal)] hover:text-white"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+      <div class="reveal delay-2 flex items-center justify-center">
+        <div class="frost relative rounded-[28px] border border-[color:var(--line)] p-4 shadow-soft-xl">
+          <img
+            src="/assets/micah-hero.jpg"
+            alt="Micah Fischer portrait"
+            class="h-[420px] w-[340px] rounded-[22px] object-cover"
+            loading="eager"
+          />
+          <div class="absolute -bottom-6 -left-6 hidden rounded-2xl bg-[color:var(--sky)] px-5 py-4 text-xs uppercase tracking-[0.3em] text-[color:var(--ink)] shadow-soft-xl md:block">
+            Designer · Strategist
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main class="mx-auto w-full max-w-6xl space-y-24 px-6 py-20">
+    <section id="work" class="space-y-10">
+      <div class="space-y-3">
+        <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Recent Projects</p>
+        <h2 class="text-3xl md:text-4xl">Selected Work</h2>
+        <p class="max-w-2xl text-[color:var(--charcoal)]">
+          A mix of healthcare, smart home, and education projects focused on clarity, trust, and impact.
+        </p>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-2">
+        {featuredProjects.map((project, index) => (
+          <article
+            class="reveal rounded-[28px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl"
+            style={`animation-delay: ${0.08 * index}s`}
+          >
+            <div class="mb-5 overflow-hidden rounded-[20px] border border-[color:var(--line)] bg-[color:var(--warm)]">
+              {project.imageUnavailable ? (
+                <div class="flex h-56 items-center justify-center text-sm uppercase tracking-[0.35em] text-[color:var(--charcoal)]">
+                  Image unavailable
+                </div>
+              ) : (
+                <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  class="h-56 w-full object-cover"
+                  loading="lazy"
+                />
+              )}
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-2xl">{project.title}</h3>
+              <p class="text-[color:var(--charcoal)]">{project.tagline}</p>
+              <p class="text-sm text-[color:var(--charcoal)]">{project.summary}</p>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em] text-[color:var(--charcoal)]">
+              <span class="rounded-full border border-[color:var(--line)] px-3 py-1">{project.role}</span>
+              <span class="rounded-full border border-[color:var(--line)] px-3 py-1">{project.timeline}</span>
+              <span class="rounded-full border border-[color:var(--line)] px-3 py-1">{project.focus}</span>
+            </div>
+            <a
+              class="mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-[color:var(--sunset)]"
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Read full case study
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        ))}
+      </div>
+
+      <div class="space-y-4">
+        <h3 class="text-xl">Locked Case Studies</h3>
+        <div class="grid gap-4 md:grid-cols-2">
+          {lockedProjects.map((project) => (
+            <div class="rounded-[22px] border border-dashed border-[color:var(--line)] bg-[color:var(--warm)] p-5">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg">{project.title}</h4>
+                <span class="text-xs uppercase tracking-[0.3em] text-[color:var(--charcoal)]">Locked</span>
+              </div>
+              <p class="mt-2 text-sm text-[color:var(--charcoal)]">{project.summary}</p>
+              <p class="mt-3 text-xs uppercase tracking-[0.2em] text-[color:var(--charcoal)]">{project.status}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="space-y-6">
+        <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">About</p>
+        <h2 class="text-3xl md:text-4xl">Designing with clarity, collaboration, and intent.</h2>
+        <p class="text-[color:var(--charcoal)]">
+          I’m a visionary, multifaceted product designer based in Nashville. I’m a Staff Product Designer at Kimedics,
+          crafting healthcare workforce management software. Previously, I worked at LevelUp designing innovative smart
+          technology for multifamily communities. Before my product work, I built custom websites and award‑winning ad
+          campaigns for clients including Grand Canyon University, West‑MEC, and URockGirl.
+        </p>
+        <p class="text-[color:var(--charcoal)]">
+          My thoughtful, research‑backed design approach consistently delivers robust product solutions.
+        </p>
+      </div>
+      <div class="space-y-6">
+        <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+          <h3 class="text-lg">Hard Skills</h3>
+          <ul class="mt-4 space-y-2 text-sm text-[color:var(--charcoal)]">
+            {hardSkills.map((skill) => (
+              <li>{skill}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+          <h3 class="text-lg">Soft Skills</h3>
+          <ul class="mt-4 space-y-2 text-sm text-[color:var(--charcoal)]">
+            {softSkills.map((skill) => (
+              <li>{skill}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+          <h3 class="text-lg">Tools</h3>
+          <ul class="mt-4 space-y-2 text-sm text-[color:var(--charcoal)]">
+            {tools.map((tool) => (
+              <li>{tool}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="space-y-10">
+      <div class="space-y-3">
+        <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Experience</p>
+        <h2 class="text-3xl md:text-4xl">Design leadership across healthcare, smart home, and education.</h2>
+        <p class="max-w-2xl text-[color:var(--charcoal)]">
+          With over five years of experience crafting websites and digital products, I build solutions that strengthen
+          brand experience and drive measurable impact.
+        </p>
+      </div>
+      <div class="grid gap-6">
+        {experience.map((item) => (
+          <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <h3 class="text-xl">{item.role}</h3>
+              <span class="text-xs uppercase tracking-[0.3em] text-[color:var(--charcoal)]">{item.dates}</span>
+            </div>
+            <p class="mt-2 font-medium text-[color:var(--charcoal)]">{item.company}</p>
+            <p class="mt-3 text-sm text-[color:var(--charcoal)]">{item.detail}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-2">
+      <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+        <h3 class="text-xl">Education</h3>
+        <div class="mt-5 space-y-4">
+          {education.map((item) => (
+            <div>
+              <p class="text-sm uppercase tracking-[0.25em] text-[color:var(--charcoal)]">{item.dates}</p>
+              <p class="mt-1 text-lg">{item.program}</p>
+              <p class="text-sm font-medium text-[color:var(--charcoal)]">{item.school}</p>
+              <p class="mt-2 text-sm text-[color:var(--charcoal)]">{item.detail}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="rounded-[24px] border border-[color:var(--line)] bg-[color:var(--warm)] p-6 shadow-soft-xl">
+        <h3 class="text-xl">Availability</h3>
+        <p class="mt-4 text-sm text-[color:var(--charcoal)]">
+          I collaborate with startups and growing brands who want to simplify complex workflows, build intuitive
+          interfaces, and launch bold, human‑centered products.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em] text-[color:var(--charcoal)]">
+          <span class="rounded-full border border-[color:var(--line)] px-3 py-1">Product UX</span>
+          <span class="rounded-full border border-[color:var(--line)] px-3 py-1">Design Systems</span>
+          <span class="rounded-full border border-[color:var(--line)] px-3 py-1">Web & Brand</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="space-y-5">
+        <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Contact</p>
+        <h2 class="text-3xl md:text-4xl">Let’s build your next big idea.</h2>
+        <p class="text-[color:var(--charcoal)]">
+          Together we can turn ambitious ideas into real products that deliver for your business and your customers.
+          Reach out and I’ll respond within 48 hours.
+        </p>
+      </div>
+      <div class="space-y-5 rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+        <div>
+          <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Email</p>
+          <a class="mt-2 block text-lg text-[color:var(--sunset)]" href="mailto:micah@micahfischer.com">
+            micah@micahfischer.com
+          </a>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Instagram</p>
+          <a class="mt-2 block text-lg text-[color:var(--sunset)]" href="https://www.instagram.com/micahfischerdesign" target="_blank" rel="noreferrer">
+            @micahfischerdesign
+          </a>
+        </div>
+        <div class="rounded-[18px] bg-[color:var(--warm)] p-4 text-sm text-[color:var(--charcoal)]">
+          Prefer a form? I can wire up a custom contact flow once we decide on the hosting platform.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[color:var(--line)] bg-white">
+    <div class="mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-4 px-6 py-6 text-xs uppercase tracking-[0.3em] text-[color:var(--charcoal)] md:flex-row md:items-center">
+      <span>© 2026 Micah Fischer</span>
+      <span>Designed in Nashville</span>
+    </div>
+  </footer>
+</Layout>
