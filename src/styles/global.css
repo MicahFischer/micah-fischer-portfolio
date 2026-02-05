@@ -89,3 +89,11 @@ section {
     animation: none;
   }
 }
+
+.radius-lg {
+  border-radius: 22px;
+}
+
+.radius-md {
+  border-radius: 18px;
+}

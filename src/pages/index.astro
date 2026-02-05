@@ -207,14 +207,14 @@ const tools = [
         </div>
       </div>
       <div class="reveal delay-2 flex items-center justify-center">
-        <div class="frost relative rounded-[28px] border border-[color:var(--line)] p-4 shadow-soft-xl">
+        <div class="frost relative radius-lg border border-[color:var(--line)] p-4 shadow-soft-lg">
           <img
             src="/assets/micah-hero.jpg"
             alt="Micah Fischer portrait"
-            class="h-[420px] w-[340px] rounded-[22px] object-cover"
+            class="h-[420px] w-[340px] radius-md object-cover"
             loading="eager"
           />
-          <div class="absolute -bottom-6 -left-6 hidden rounded-2xl bg-[color:var(--cool)] px-5 py-4 text-xs uppercase tracking-[0.3em] text-[color:var(--ink)] shadow-soft-xl md:block">
+          <div class="absolute -bottom-6 -left-6 hidden radius-md bg-[color:var(--cool)] px-5 py-4 text-xs uppercase tracking-[0.3em] text-[color:var(--ink)] shadow-soft-lg md:block">
             Designer · Strategist
           </div>
         </div>
@@ -235,10 +235,10 @@ const tools = [
       <div class="grid gap-8 lg:grid-cols-2">
         {featuredProjects.map((project, index) => (
           <article
-            class="reveal rounded-[28px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl"
+            class="reveal radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg"
             style={`animation-delay: ${0.08 * index}s`}
           >
-            <div class="mb-5 overflow-hidden rounded-[20px] border border-[color:var(--line)] bg-[color:var(--warm)]">
+            <div class="mb-5 overflow-hidden radius-md border border-[color:var(--line)] bg-[color:var(--warm)]">
               {project.imageUnavailable ? (
                 <div class="flex h-56 items-center justify-center text-sm uppercase tracking-[0.35em] text-[color:var(--charcoal)]">
                   Image unavailable
@@ -258,9 +258,9 @@ const tools = [
               <p class="text-sm text-[color:var(--charcoal)]">{project.summary}</p>
             </div>
             <div class="mt-4 flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em] text-[color:var(--charcoal)]">
-              <span class="rounded-full border border-[color:var(--line)] px-3 py-1">{project.role}</span>
-              <span class="rounded-full border border-[color:var(--line)] px-3 py-1">{project.timeline}</span>
-              <span class="rounded-full border border-[color:var(--line)] px-3 py-1">{project.focus}</span>
+              <span class="radius-md border border-[color:var(--line)] px-3 py-1">{project.role}</span>
+              <span class="radius-md border border-[color:var(--line)] px-3 py-1">{project.timeline}</span>
+              <span class="radius-md border border-[color:var(--line)] px-3 py-1">{project.focus}</span>
             </div>
             <a
               class="mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-[0.25em] text-[color:var(--accent)]"
@@ -279,11 +279,11 @@ const tools = [
         <h3 class="text-xl">Locked Case Studies</h3>
         <div class="grid gap-4 md:grid-cols-2">
           {lockedProjects.map((project) => (
-            <div class="rounded-[22px] border border-dashed border-[color:var(--line)] bg-[color:var(--warm)] p-5">
-              <div class="flex items-center justify-between">
-                <h4 class="text-lg">{project.title}</h4>
-                <span class="text-xs uppercase tracking-[0.3em] text-[color:var(--charcoal)]">Locked</span>
-              </div>
+          <div class="radius-md border border-dashed border-[color:var(--line)] bg-[color:var(--warm)] p-5">
+            <div class="flex items-center justify-between">
+              <h4 class="text-lg">{project.title}</h4>
+              <span class="text-xs uppercase tracking-[0.3em] text-[color:var(--charcoal)]">Locked</span>
+            </div>
               <p class="mt-2 text-sm text-[color:var(--charcoal)]">{project.summary}</p>
               <p class="mt-3 text-xs uppercase tracking-[0.2em] text-[color:var(--charcoal)]">{project.status}</p>
             </div>
@@ -307,7 +307,7 @@ const tools = [
         </p>
       </div>
       <div class="space-y-6">
-        <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+        <div class="radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg">
           <h3 class="text-lg">Hard Skills</h3>
           <ul class="mt-4 space-y-2 text-sm text-[color:var(--charcoal)]">
             {hardSkills.map((skill) => (
@@ -315,7 +315,7 @@ const tools = [
             ))}
           </ul>
         </div>
-        <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+        <div class="radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg">
           <h3 class="text-lg">Soft Skills</h3>
           <ul class="mt-4 space-y-2 text-sm text-[color:var(--charcoal)]">
             {softSkills.map((skill) => (
@@ -323,7 +323,7 @@ const tools = [
             ))}
           </ul>
         </div>
-        <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+        <div class="radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg">
           <h3 class="text-lg">Tools</h3>
           <ul class="mt-4 space-y-2 text-sm text-[color:var(--charcoal)]">
             {tools.map((tool) => (
@@ -345,7 +345,7 @@ const tools = [
       </div>
       <div class="grid gap-6">
         {experience.map((item) => (
-          <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+          <div class="radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg">
             <div class="flex flex-wrap items-center justify-between gap-3">
               <h3 class="text-xl">{item.role}</h3>
               <span class="text-xs uppercase tracking-[0.3em] text-[color:var(--charcoal)]">{item.dates}</span>
@@ -358,7 +358,7 @@ const tools = [
     </section>
 
     <section class="grid gap-6 lg:grid-cols-2">
-      <div class="rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+      <div class="radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg">
         <h3 class="text-xl">Education</h3>
         <div class="mt-5 space-y-4">
           {education.map((item) => (
@@ -371,7 +371,7 @@ const tools = [
           ))}
         </div>
       </div>
-      <div class="rounded-[24px] border border-[color:var(--line)] bg-[color:var(--warm)] p-6 shadow-soft-xl">
+      <div class="radius-lg border border-[color:var(--line)] bg-[color:var(--warm)] p-6 shadow-soft-lg">
         <h3 class="text-xl">Availability</h3>
         <p class="mt-4 text-sm text-[color:var(--charcoal)]">
           I collaborate with startups and growing brands who want to simplify complex workflows, build intuitive
@@ -394,7 +394,7 @@ const tools = [
           Reach out and I’ll respond within 48 hours.
         </p>
       </div>
-      <div class="space-y-5 rounded-[24px] border border-[color:var(--line)] bg-white p-6 shadow-soft-xl">
+      <div class="space-y-5 radius-lg border border-[color:var(--line)] bg-white p-6 shadow-soft-lg">
         <div>
           <p class="text-xs uppercase tracking-[0.35em] text-[color:var(--charcoal)]">Email</p>
           <a class="mt-2 block text-lg text-[color:var(--accent)]" href="mailto:micah@micahfischer.com">
@@ -407,7 +407,7 @@ const tools = [
             @micahfischerdesign
           </a>
         </div>
-        <div class="rounded-[18px] bg-[color:var(--warm)] p-4 text-sm text-[color:var(--charcoal)]">
+        <div class="radius-md bg-[color:var(--warm)] p-4 text-sm text-[color:var(--charcoal)]">
           Prefer a form? I can wire up a custom contact flow once we decide on the hosting platform.
         </div>
       </div>
